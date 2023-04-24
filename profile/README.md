@@ -87,6 +87,14 @@ wrappid init <project_name>
 
 This will create a `Wrappid` project with project name `wrappid-<project_name>`
 
+## Further Documentation
+
+Run the below command to find other features supported by the `Wrappid Toolkit`.
+
+```
+wrappid --help
+```
+
 <!--
 ## Hi there 👋
 
