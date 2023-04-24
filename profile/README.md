@@ -85,7 +85,7 @@ Run the below command to initialize a `Wrappid` project with a specified project
 wrappid init <project_name>
 ```
 
-This will create a `Wrappid` project with project name `wrappid-<project_name>`
+This will create a `Wrappid` project with project name `<project_name>`
 
 ## Further Documentation
 
