@@ -1,3 +1,6 @@
+<img src="https://github.com/wrappid/.github/blob/main/logo/logo-1200x400.png" />
+
+<!--
 ```
                                     _     _
     __      ___ __ __ _ _ __  _ __ (_) __| |
@@ -9,10 +12,13 @@
 ```
 
 # `Wrappid`
+-->
 
-## Wrapper Framework for Rapid development
+# Wrapper Framework for Rapid development
 
-`Wrappid` Framework is a wrapper framework built to enable rapid development of applications based on `React` and `React Native`. Here, you **write code once** and use `Wrappid Toolkit` to build your web and mobile applications simultaneously.
+## `Wrappid` Framework is a wrapper framework built to enable rapid development of applications.
+
+`Wrappid` Framework is a wrapper framework built to enable rapid development of applications based on `React`, `React Native`, `Node`, `Express`, etc. Here, you **write code once** and use `Wrappid Toolkit` to build your web and mobile applications simultaneously.
 
 `Wrappid` includes a repository of components, called the `CoreComponents`, for application developers to use. As application developers, you also have the flexibility to write your own components. By default the styling libraries used are `mui` for web and `react native paper` for mobile.
 
@@ -20,13 +26,13 @@
 
 ## Getting Started
 
-This getting started section will help you setup a basic `Wrappid` project. The easiest way is to use the `Wrappid Toolkit`. Follow the below steps to get going.
+This getting started section will help you setup a basic `Wrappid` project environment. The easiest way is to use the `Wrappid Toolkit`. Follow the below steps to get going.
 
 1. Verify Pre-requisites
-2. Setup `Wrappid Toolkit`
-3. Setup `Wrappid` Project
+2. Install `Wrappid Toolkit`
+3. Setup `Wrappid` Project(s)
 
-### Verify Pre-requisites
+### 1. Verify Pre-requisites
 
 First you need to verify that your system fulfills the pre-requisites. Listed below are the things required to be available in your system.
 
@@ -54,9 +60,27 @@ npm -v
 
 Please install them if they are not available in your system. Kindly follow original installation guide to do so.
 
-### Setup `Wrappid Toolkit`
+### 2. Install `Wrappid Toolkit`
 
-To setup `Wrappid Toolkit`, you need to install `Wrappid Toolkit` globally in your system. Run the below command to install `Wrappid Toolkit` globally in your system.
+To setup `Wrappid Toolkit`, you need to install `Wrappid Toolkit` globally in your system.
+
+> **_Note:_**
+>
+> _The `Wrappid Toolkit` is available in the GitHub npm pkg registry. You will have to setup scoped pkg registry as your npm runtime configuration._
+>
+> _Run the below commands to setup scoped pkg registry._
+>
+> <!--C:\Users\Sam>-->
+>
+> ```
+> npm config set @wrappid:registry https://npm.pkg.github.com/wrappid
+>
+> npm config set //npm.pkg.github.com/:_authToken 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
+> ```
+>
+> _The above mentioned authToken could only be used to read and download the `Wrappid Toolkit` package._
+
+Run the below command to install `Wrappid Toolkit` globally in your system.
 
 ```
 npm install -g @wrappid/toolkit
@@ -105,6 +129,28 @@ Run the below command to find other features supported by the `Wrappid Toolkit`.
 wrappid --help
 ```
 
+## Learn Wrappid in details
+
+`Wrappid` Framework supports building frontend, backend (API middleware & DB handling) and business specific modules. The framework helps generate the below:
+
+1. Frontend - `<wrappid>-app`
+2. Backend - `<wrappid>-service`
+3. Modules - `<wrappid>-module`
+
+### 1. Frontend - `<wrappid>-app`
+
+The `<wrappid>-app` is based on `React` and `React Native`.
+
+Here, you **write code once** and use `Wrappid Toolkit` to build your web and mobile applications simultaneously.
+
+### 2. Backend - `<wrappid>-service`
+
+The `<wrappid>-service` is based on `node` and `express`.
+
+Here, the `Wrappid Toolkit` helps you build API middleware along with scripts to handle DB.
+
+### 3. Modules - `<wrappid>-module`
+
 <!--
 ## Hi there 👋
 
@@ -136,9 +182,12 @@ Template(s) available for now as follows:
 - Mobile: Using React Native 0.71.6
 
 ```
+
 > Choose template
+>
 > 1. Web: Using React 18.2.0
 > 2. Mobile: Using React Native 0.71.6
+
 ```
 
 Based on your template selection your project will be prepared.
@@ -152,3 +201,7 @@ Start auto installation process.
 Now you have a sample module for business module refference.
 
 -->
+
+```
+
+```
