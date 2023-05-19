@@ -68,6 +68,8 @@ To setup `Wrappid Toolkit`, you need to install `Wrappid Toolkit` globally in yo
 >
 > _The `Wrappid Toolkit` is available in the GitHub npm pkg registry. You will have to setup scoped pkg registry as your npm runtime configuration._
 >
+> _Please fill **[this form](https://forms.gle/NCUbSXvsX1v9QhD96)** to get **<WRAPPID_TOKEN>**_
+> 
 > _Run the below commands to setup scoped pkg registry._
 >
 > <!--C:\Users\Sam>-->
@@ -75,7 +77,7 @@ To setup `Wrappid Toolkit`, you need to install `Wrappid Toolkit` globally in yo
 > ```
 > npm config set @wrappid:registry https://npm.pkg.github.com/wrappid
 >
-> npm config set //npm.pkg.github.com/:_authToken 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
+> npm config set //npm.pkg.github.com/:_authToken <WRAPPID_TOKEN>
 > ```
 >
 > _The above mentioned authToken could only be used to read and download the `Wrappid Toolkit` package._
