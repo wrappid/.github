@@ -126,8 +126,10 @@ https://github.com/cli/cli/releases/tag/v2.28.0
 
 > **_Note:_**  
 > 
-> _If `gh` isn't working, close all terminals/cmd and open a fresh terminal/cmd_  
-> _If gh still doesn't works, [click here](https://github.com/cli/cli#installation) to go to the official documentation of github cli, and install `gh` manually_  
+> _If `gh` isn't working, close all terminals/cmd and open a fresh terminal/cmd and run `gh --version` to check `gh` command  _  
+> 
+> _If `gh` still doesn't works, [click here](https://github.com/cli/cli#installation) to go to the official documentation of github cli, and install `gh` manually_  
+> _After successfull installtaion, run `gh auth login` and complete your authentication._
 
 ### Setup `Wrappid` Project
 
