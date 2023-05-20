@@ -101,6 +101,34 @@ wrappid -v
 v0.0.14
 ```
 
+Run the below command to install dependencies Wrappid toolkit uses
+
+```
+wrappid install
+```
+This will download and install gh cli of github, if not install. 
+```
+  ? What account do you want to log into?  [Use arrows to move, type to filter]
+  > GitHub.com
+    GitHub Enterprise Server
+```
+Select Github.com, Press Enter.  
+You'll be asked to authenticate yourself.  
+Press `Y` and hit Enter if you are not authenticated or if you wish to re-authenticate, Otherwise press `N` and hit Enter.  
+
+Once the installation is done, verify the `gh` installation. Run the below command to verify you already have `gh` installed and check the installed version.  
+This should show you the exact version of `gh` installed.  
+```
+wrappid_user@system:~$ gh --version
+gh version 2.28.0 (2023-04-25)
+https://github.com/cli/cli/releases/tag/v2.28.0
+```
+
+> **_Note:_**  
+> 
+> _If `gh` isn't working, close all terminals/cmd and open a fresh terminal/cmd_  
+> _If gh still doesn't works, [click here](https://github.com/cli/cli#installation) to go to the official documentation of github cli, and install `gh` manually_  
+
 ### Setup `Wrappid` Project
 
 #### 1. Initialize a `Wrappid` project
