@@ -1,7 +1,7 @@
 <img src="https://github.com/wrappid/.github/blob/main/logo/logo-1200x400.png" />
 
 <!--
-```
+```text
                                     _     _
     __      ___ __ __ _ _ __  _ __ (_) __| |
     \ \ /\ / / '__/ _` | '_ \| '_ \| |/ _` |
@@ -26,11 +26,14 @@
 
 ## Getting Started
 
-This getting started section will help you setup a basic `Wrappid` project environment. The easiest way is to use the `Wrappid Toolkit`. Follow the below steps to get going.
+This getting started section will help you setup a basic `Wrappid` project environment. The easiest way is to use the `Wrappid Toolkit`.
+
+Follow the below steps to get going.
 
 1. Verify Pre-requisites
 2. Install `Wrappid Toolkit`
-3. Setup `Wrappid` Project(s)
+3. One-time Initialisation
+4. Setup `Wrappid` Project(s)
 
 ### 1. Verify Pre-requisites
 
@@ -43,14 +46,14 @@ First you need to verify that your system fulfills the pre-requisites. Listed be
 
 To see if you already have Node.js and npm installed and check the installed version, run the following commands:
 
-```
+```terminal
 node -v
 npm -v
 ```
 
 #### Refer the exact version we use:
 
-```
+```terminal
 node -v
 v16.18.1
 
@@ -62,82 +65,130 @@ Please install them if they are not available in your system. Kindly follow orig
 
 ### 2. Install `Wrappid Toolkit`
 
-To setup `Wrappid Toolkit`, you need to install `Wrappid Toolkit` globally in your system.
+To use `Wrappid Toolkit`, you need to install `Wrappid Toolkit` globally in your system.
 
+> <br/>
+>
 > **_Note:_**
 >
 > _The `Wrappid Toolkit` is available in the GitHub npm pkg registry. You will have to setup scoped pkg registry as your npm runtime configuration._
 >
-> _Please fill **[this form](https://forms.gle/NCUbSXvsX1v9QhD96)** to get **<WRAPPID_TOKEN>**_
-> 
-> _Run the below commands to setup scoped pkg registry._
+> _Run the below commands to setup scoped pkg registry:_
 >
 > <!--C:\Users\Sam>-->
 >
-> ```
+> ```terminal
 > npm config set @wrappid:registry https://npm.pkg.github.com/wrappid
 >
 > npm config set //npm.pkg.github.com/:_authToken <WRAPPID_TOKEN>
 > ```
 >
-> _The above mentioned authToken could only be used to read and download the `Wrappid Toolkit` package._
+> _Please fill [Wrappid Early Access Request form](https://forms.gle/NCUbSXvsX1v9QhD96) to get a valid_ `<WRAPPID_TOKEN>`. After filling the form you will receive the `<WRAPPID_TOKEN>` in your email.
+>
+> _The above mentioned_ `<WRAPPID_TOKEN>` _could only be used to read and download the `Wrappid Toolkit` package._
+>
+> <br/>
 
-Run the below command to install `Wrappid Toolkit` globally in your system.
+<br/>Run the below command to install `Wrappid Toolkit` globally in your system.
 
-```
+```terminal
 npm install -g @wrappid/toolkit
 ```
 
 Once the installation is done, verify the `Wrappid Toolkit` installation. Run the below command to verify you already have `Wrappid Toolkit` installed and check the installed version
 
-```
+```terminal
 wrappid -v
 ```
 
 This should show you the exact version of `Wrappid Toolkit` installed
 
-```
+```terminal
 wrappid -v
 v0.0.14
 ```
 
-Run the below command to install dependencies Wrappid toolkit uses
+### 3. One-time Initialisation
 
-```
+Run the below command to install all dependencies `Wrappid Toolkit` uses
+
+```terminal
 wrappid install
 ```
-This will download and install gh cli of github, if not install. 
-```
-  ? What account do you want to log into?  [Use arrows to move, type to filter]
-  > GitHub.com
-    GitHub Enterprise Server
-```
-Select Github.com, Press Enter.  
-You'll be asked to authenticate yourself.  
-Press `Y` and hit Enter if you are not authenticated or if you wish to re-authenticate, Otherwise press `N` and hit Enter.  
 
-Once the installation is done, verify the `gh` installation. Run the below command to verify you already have `gh` installed and check the installed version.  
-This should show you the exact version of `gh` installed.  
+This one-time initialisation of `Wrappid Toolkit` follows the below steps:
+
+- Install package dependencies
+- Download & Install GitHub CLI or `gh` (if not already installed)
+- Authenticate with GitHub A/c to use GitHub CLI or `gh`
+
+#### 3.1. Install package dependencies
+
+This is a automated process. You need not do anything.
+
+#### 3.2. Download & Install GitHub CLI or `gh` (if not already installed)
+
+This is a automated process but you will be prompted with GitHub CLI or `gh` installation. Kindly click Next -> Next -> ... -> Finish to complete the GitHub CLI or `gh` installation.
+
+#### 3.3. Authenticate with GitHub A/c to use GitHub CLI or `gh`
+
+When prompted, follow on-screen instructions to authenticate yourself with your GitHub A/c. It starts like:
+
+<!-- <span style="color:orange"><code>GitHub CLI authenticating...</code></span> -->
+
+```terminal
+GitHub CLI authenticating...
+? What account do you want to log into?  [Use arrows to move, type to filter]
+> GitHub.com
+  GitHub Enterprise Server
 ```
-wrappid_user@system:~$ gh --version
+
+Select Github.com (generally already selected), Press Enter.
+
+You'll be asked to authenticate yourself.  
+Press `Y` and hit Enter if you are not authenticated or if you wish to re-authenticate, Otherwise press `N` and hit Enter.
+
+<!-- Once the installation is done, verify the `gh` installation. Run the below command to verify you already have `gh` installed and check the installed version.
+This should show you the exact version of `gh` installed. -->
+
+<!--wrappid_user@system:~$-->
+
+<!-- ```terminal
+gh --version
 gh version 2.28.0 (2023-04-25)
 https://github.com/cli/cli/releases/tag/v2.28.0
-```
+``` -->
 
-> **_Note:_**  
-> 
-> _If `gh` isn't working, close all terminals/cmd and open a fresh terminal/cmd and run `gh --version` to check `gh` command  _  
-> 
-> _If `gh` still doesn't works, [click here](https://github.com/cli/cli#installation) to go to the official documentation of github cli, and install `gh` manually_  
-> _After successfull installtaion, run `gh auth login` and complete your authentication._
+> <br/>
+>
+> **_Note:_**
+>
+> _If you get an error during the course of execution of the command (`wrappid install`), or find that `gh` isn't working, which generally looks like the below:_
+>
+> ```terminal
+> 'gh' is not recognized as an internal or external command,
+> operable program or batch file.
+> ```
+>
+> _Close all terminals/cmd and open a fresh terminal/cmd and run `gh` or `gh --version` to confirm GitHub CLI installation._
+>
+> _If `gh` still doesn't work, go to the [official documentation of GitHub CLI](https://github.com/cli/cli#installation) and install `gh` manually._
+>
+> _After successfull installation of GitHub CLI or `gh`, run `wrappid install` again._
+>
+> _If you are still not taken to authentication instructions, run `gh auth login` and complete your authentication manually._
+>
+> [Know more about GitHub CLI](https://cli.github.com/manual)
+>
+> <br/>
 
-### Setup `Wrappid` Project
+### 4. Setup `Wrappid` Project
 
 #### 1. Initialize a `Wrappid` project
 
 Run the below command to initialize a default `Wrappid` project
 
-```
+```terminal
 wrappid init
 ```
 
@@ -147,17 +198,17 @@ This will create a `Wrappid` project with default project name `wrappid-app`
 
 Run the below command to initialize a `Wrappid` project with a specified project name.
 
-```
+```terminal
 wrappid init <project_name>
 ```
 
 This will create a `Wrappid` project with project name `<project_name>`
 
-## Further Documentation
+## `Wrappid Toolkit` Usage Documentation
 
-Run the below command to find other features supported by the `Wrappid Toolkit`.
+Run the below command to find other `[command] [subcommand] [arguments] [options]` supported by the `Wrappid Toolkit`.
 
-```
+```terminal
 wrappid --help
 ```
 
@@ -234,6 +285,43 @@ Now you have a sample module for business module refference.
 
 -->
 
-```
+### All commands for ref:
 
+```
+wrappid [command] [subcommand] [arguments] [options]
+
+This is a npm package to enable Wrappid Toolkit so that application developers can use the wrappid command line interface to handle Wrappid projects.
+
+Options:
+  -V, --version          output the version number
+  -h, --help             display help for command
+
+Commands:
+  install                This command will install all the pre-requisite such as:
+                         a. Install GitHub CLI
+                         b. Authenticate with GitHub A/c using GitHub CLI
+  list [options]         Show list of wrappid projects in current working directory.
+  init <project-name>    This command will initialize app service module project using wrappid template.
+  setup                  This command will setup web mobile project.
+  start                  This command will start web mobile project.
+  copy [options]         This command helps you to copy src and res to web and mobile runtime.
+  include <module-name>  This command helps you to include module.
+
+wrappid install
+
+wrappid init app test - old
+wrappid init service test - old
+wrappid init test - old
+
+wrappid init <projectname>
+wrappid init <projectname> app
+wrappid init <projectname> service
+
+wrappid setup web
+wrappid setup mobile
+wrappid setup
+
+wrappid start web --env=dev
+wrappid start mobile --env=dev
+wrappid start service --env=dev
 ```
