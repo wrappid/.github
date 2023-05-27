@@ -98,13 +98,13 @@ npm install -g @wrappid/toolkit
 Once the installation is done, verify the `Wrappid Toolkit` installation. Run the below command to verify you already have `Wrappid Toolkit` installed and check the installed version
 
 ```terminal
-wrappid -v
+wrappid -V
 ```
 
 This should show you the exact version of `Wrappid Toolkit` installed
 
 ```terminal
-wrappid -v
+wrappid -V
 v0.0.14
 ```
 
@@ -202,7 +202,8 @@ Run the below command to initialize a `Wrappid` project with a specified project
 wrappid init <project_name>
 ```
 
-This will create a `Wrappid` project with project name `<project_name>`
+This will create 3 `Wrappid` projects with project names [`<project_name>-app`](#1. Frontend - `<wrappid>-app`), [`<project_name>-module`](#2. Backend - `<wrappid>-service`) and [`<project_name>-service`](#3. Modules - `<wrappid>-module`) 
+<!-- This will create 3 `Wrappid` projects with default project names `wrappid-app`, `wrappid-module` and `wrappid-service` -->
 
 ## `Wrappid Toolkit` Usage Documentation
 
@@ -226,14 +227,31 @@ The `<wrappid>-app` is based on `React` and `React Native`.
 
 Here, you **write code once** and use `Wrappid Toolkit` to build your web and mobile applications simultaneously.
 
-### 2. Backend - `<wrappid>-service`
+Run the below command to create Frontend Wrappid Project
+
+```terminal
+wrappid init <project_name> app
+```
+
+### 2. Backend - `<wrappid> service`
 
 The `<wrappid>-service` is based on `node` and `express`.
 
 Here, the `Wrappid Toolkit` helps you build API middleware along with scripts to handle DB.
 
+Run the below command to create Backend Wrappid Project
+
+```terminal
+wrappid init <project_name> service
+```
+
 ### 3. Modules - `<wrappid>-module`
 
+Run the below command to create Frontend Wrappid Project
+
+```terminal
+wrappid init <project_name> module
+```
 <!--
 ## Hi there 👋
 
