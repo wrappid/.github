@@ -304,7 +304,7 @@ Now you have a sample module for business module refference.
 -->
 
 ### All commands for ref:
-
+wrappid cli
 ```
 wrappid [command] [subcommand] [arguments] [options]
 
@@ -324,6 +324,7 @@ Commands:
   start                  This command will start web mobile project.
   copy [options]         This command helps you to copy src and res to web and mobile runtime.
   include <module-name>  This command helps you to include module.
+  add                    Include new modules into project directory (Not needed)
 
 wrappid install
 
@@ -342,4 +343,24 @@ wrappid setup
 wrappid start web --env=dev
 wrappid start mobile --env=dev
 wrappid start service --env=dev
+
+wrappid copy web
+wrappid copy mobile
+
+wrappid add <modulename> - old
+
+```
+wrappid-dev cli
+
+```
+Usage: wrappid-dev [command] [subcommand] [arguments] [options]                                                                   This is a npm package to enable Wrappid Developer Toolkit so that application developers can use the wrappid command line interface to handle Wrappid projects.
+
+Options:
+  -V, --version     output the version number
+  -h, --help        display help for command
+
+Commands:
+  reload [options]  This command helps to reload wrappid packages in mobile runtive environment.
+  link              This command helps to link wrappid packages in mobile runtive environment.
+  test [options]    This is a test command
 ```
