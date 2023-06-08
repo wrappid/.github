@@ -212,7 +212,15 @@ Run the below command to find other `[command] [subcommand] [arguments] [options
 ```terminal
 wrappid --help
 ```
+<!--
+## Start Development Server
 
+
+```
+wrappid start
+This should launch your default browser with a URL `http://localhost:3000`
+```
+-->
 ## Learn Wrappid in details
 
 `Wrappid` Framework supports building frontend, backend (API middleware & DB handling) and business specific modules. The framework helps generate the below:
