@@ -316,7 +316,8 @@ wrappid cli
 ```
 wrappid [command] [subcommand] [arguments] [options]
 
-This is a npm package to enable Wrappid Toolkit so that application developers can use the wrappid command line interface to handle Wrappid projects.
+This is a npm package to enable Wrappid Toolkit so that application developers
+can use the wrappid command line interface to handle Wrappid projects.
 
 Options:
   -V, --version          output the version number
@@ -370,7 +371,10 @@ wrappid build android
 wrappid-dev cli
 
 ```
-Usage: wrappid-dev [command] [subcommand] [arguments] [options]                                                                   This is a npm package to enable Wrappid Developer Toolkit so that application developers can use the wrappid command line interface to handle Wrappid projects.
+Usage: wrappid-dev [command] [subcommand] [arguments] [options]
+
+This is a npm package to enable Wrappid Developer Toolkit so that application developers
+can use the wrappid command line interface to handle Wrappid projects.
 
 Options:
   -V, --version     output the version number
