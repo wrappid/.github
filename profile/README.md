@@ -327,12 +327,18 @@ Commands:
                          a. Install GitHub CLI
                          b. Authenticate with GitHub A/c using GitHub CLI
   list [options]         Show list of wrappid projects in current working directory.
+  list deps              Show list of project dependencies
   init <project-name>    This command will initialize app service module project using wrappid template.
   setup                  This command will setup web mobile project.
   start                  This command will start web mobile project.
   copy [options]         This command helps you to copy src and res to web and mobile runtime.
-  include <module-name>  This command helps you to include module.
+  include <module-name>  Include module inside wrappid project
+  exclude <module-name>  Exclude module from wrappid project
   add                    Include new modules into project directory (Not needed)
+  build (web|android)    Create build for web or android
+  reinstall (web|mobile) Reinstall wrappid packages for web or mobile
+  update                 Update wrappid toolkit
+  update modules         Update project modules
 
 wrappid install
 
@@ -344,8 +350,8 @@ wrappid init <projectname>
 wrappid init <projectname> app
 wrappid init <projectname> service
 
-wrappid setup web
-wrappid setup mobile
+wrappid setup web --env=(dev|stage|prod)
+wrappid setup mobile --env=(dev|stage|prod)
 wrappid setup
 
 wrappid start web --env=dev
@@ -356,6 +362,9 @@ wrappid copy web
 wrappid copy mobile
 
 wrappid add <modulename> - old
+
+wrappid build web
+wrappid build android
 
 ```
 wrappid-dev cli
