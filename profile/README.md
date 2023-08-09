@@ -186,23 +186,16 @@ https://github.com/cli/cli/releases/tag/v2.28.0
 
 #### 1. Initialize a `Wrappid` project
 
-Run the below command to initialize a default `Wrappid` project
-
-```terminal
-wrappid init
-```
-
-This will create a `Wrappid` project with default project name `wrappid-app`
-
-#### 2. Initialize a `Wrappid` project with specific project name.
-
 Run the below command to initialize a `Wrappid` project with a specified project name.
 
 ```terminal
 wrappid init <project_name>
 ```
 
-This will create 3 `Wrappid` projects with project names [`<project_name>-app`](#1. Frontend - `<wrappid>-app`), [`<project_name>-module`](#2. Backend - `<wrappid>-service`) and [`<project_name>-service`](#3. Modules - `<wrappid>-module`) 
+This will create 3 `Wrappid` projects with project names  
+`<project_name>-app`  
+`<project_name>-module` and  
+`<project_name>-service`  
 <!-- This will create 3 `Wrappid` projects with default project names `wrappid-app`, `wrappid-module` and `wrappid-service` -->
 
 ## `Wrappid Toolkit` Usage Documentation
@@ -381,7 +374,10 @@ Options:
   -h, --help        display help for command
 
 Commands:
-  reload [options]  This command helps to reload wrappid packages in mobile runtive environment.
-  link              This command helps to link wrappid packages in mobile runtive environment.
-  test [options]    This is a test command
+  init [path-to-wrappid-dev-home]                Initialize and setup wrappid development environment.
+  reset                                          Removes wrappid dev environment configuration
+  linkit [web|mobile]                            Link wdpkg (wrappid development packages) in web and mobile runtime.
+  reload [web|mobile] --pkg [core|native|styles] Reload wdpkg (wrappid development packages) in web and mobile runtime
+  link {Depreciated}                             Link wrappid packages in mobile runtive environment.
+  
 ```
