@@ -306,6 +306,7 @@ Now you have a sample module for business module refference.
 
 ### All commands for ref:
 wrappid cli
+Alias: `wcli`, `wr`.
 ```
 wrappid [command] [subcommand] [arguments] [options]
 
@@ -322,10 +323,10 @@ Commands:
                          b. Authenticate with GitHub A/c using GitHub CLI
   list [options]         Show list of wrappid projects in current working directory.
   list deps              Show list of project dependencies
-  init <project-name>    This command will initialize app service module project using wrappid template.
-  setup                  This command will setup web mobile project.
-  start                  This command will start web mobile project.
-  copy [options]         This command helps you to copy src and res to web and mobile runtime.
+  init <project-name>    Initialize app service module project using wrappid template.
+  setup                  Setup web mobile project.
+  start                  Start web mobile project.
+  copy [options]         Copy src and res to web and mobile runtime.
   include <module-name>  Include module inside wrappid project
   exclude <module-name>  Exclude module from wrappid project
   add                    Include new modules into project directory (Not needed)
@@ -362,6 +363,7 @@ wrappid build android
 
 ```
 wrappid-dev cli
+Alias: `wdev`, `wd`.
 
 ```
 Usage: wrappid-dev [command] [subcommand] [arguments] [options]
