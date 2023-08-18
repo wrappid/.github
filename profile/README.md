@@ -231,7 +231,7 @@ Here, you **write code once** and use `Wrappid Toolkit` to build your web and mo
 Run the below command to create Frontend Wrappid Project
 
 ```terminal
-wrappid init <project_name> app
+wrappid init app <project_name>
 ```
 
 ### 2. Backend - `<wrappid> service`
@@ -243,7 +243,7 @@ Here, the `Wrappid Toolkit` helps you build API middleware along with scripts to
 Run the below command to create Backend Wrappid Project
 
 ```terminal
-wrappid init <project_name> service
+wrappid init service <project_name>
 ```
 
 ### 3. Modules - `<wrappid>-module`
@@ -251,7 +251,7 @@ wrappid init <project_name> service
 Run the below command to create Frontend Wrappid Project
 
 ```terminal
-wrappid init <project_name> module
+wrappid init module <project_name>
 ```
 <!--
 ## Hi there 👋
@@ -342,8 +342,9 @@ wrappid init service test - old
 wrappid init test - old
 
 wrappid init <projectname>
-wrappid init <projectname> app
-wrappid init <projectname> service
+wrappid init app <projectname>
+wrappid init module <projectname>
+wrappid init service <projectname>
 
 wrappid setup web --env=(dev|stage|prod)
 wrappid setup mobile --env=(dev|stage|prod)
@@ -378,8 +379,7 @@ Options:
 Commands:
   init [path-to-wrappid-dev-home]                Initialize and setup wrappid development environment.
   reset                                          Removes wrappid dev environment configuration
-  linkit [web|mobile]                            Link wdpkg (wrappid development packages) in web and mobile runtime.
+  link [web|mobile]                            Link wdpkg (wrappid development packages) in web and mobile runtime.
   reload [web|mobile] --pkg [core|native|styles] Reload wdpkg (wrappid development packages) in web and mobile runtime
-  link {Depreciated}                             Link wrappid packages in mobile runtive environment.
   
 ```
