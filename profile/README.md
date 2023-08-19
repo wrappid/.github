@@ -324,8 +324,8 @@ Commands:
   list [options]         Show list of wrappid projects in current working directory.
   list deps              Show list of project dependencies
   init <project-name>    Initialize app service module project using wrappid template.
-  setup                  Setup web mobile project.
-  start                  Start web mobile project.
+  setup                  Setup [APP(web|mobile)|SERVICE] project.
+  start                  Start [APP(web|mobile)|SERVICE] project.
   copy [options]         Copy src and res to web and mobile runtime.
   include <module-name>  Include module inside wrappid project
   exclude <module-name>  Exclude module from wrappid project
@@ -348,11 +348,11 @@ wrappid init service <projectname>
 
 wrappid setup web --env=(dev|stage|prod)
 wrappid setup mobile --env=(dev|stage|prod)
-wrappid setup
+wrappid setup service --env=(dev|stage|prod)
 
-wrappid start web --env=dev
-wrappid start mobile --env=dev
-wrappid start service --env=dev
+wrappid start web --env=(dev|stage|prod)
+wrappid start mobile --env=(dev|stage|prod)
+wrappid start service --env=(dev|stage|prod)
 
 wrappid copy web
 wrappid copy mobile
