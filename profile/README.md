@@ -334,6 +334,7 @@ Commands:
   reinstall (web|mobile) Reinstall wrappid packages for web or mobile
   update                 Update wrappid toolkit
   update modules         Update project modules
+  update modules <name>  Update specified module, if module is included in project
 
 wrappid install
 
