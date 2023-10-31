@@ -198,6 +198,45 @@ This will create 3 `Wrappid` projects with project names
 `<project_name>-service`  
 <!-- This will create 3 `Wrappid` projects with default project names `wrappid-app`, `wrappid-module` and `wrappid-service` -->
 
+#### 2. Setup a `Wrappid` project
+Run the below command to setup a wrappid-app:
+
+```bash
+cd wrappid-app
+wrappid setup web
+```
+
+Run the below command to setup a wrappid-service:
+
+```bash
+cd wrappid-service
+wrappid setup service
+```
+
+#### 3. Start Your `Wrappid` project
+
+After you are done with setup, you can start wrappid-app in 2 environment, web and mobile.
+
+Run the below command to start the development frontend server for web:
+```bash
+cd wrappid-app
+wrappid start web
+```
+
+Run the below command to start the development server for mobile:
+
+```bash
+cd wrappid-app
+wrappid start mobile
+```
+
+Run the below command to start the development backend service :
+
+```bash
+cd wrappid-service
+wrappid start
+```
+
 ## `Wrappid Toolkit` Usage Documentation
 
 Run the below command to find other `[command] [subcommand] [arguments] [options]` supported by the `Wrappid Toolkit`.
@@ -253,6 +292,10 @@ Run the below command to create Frontend Wrappid Project
 ```terminal
 wrappid init module <project_name>
 ```
+
+The `cd` command changes the directory you're working with. In order to work with your newly created Wrappid-App, you'll need to navigate the terminal there.
+
+The `wrappid start <project-type>` command starts development server, ready for you to view at http://localhost:3000/. Make sure to keep the port free!
 <!--
 ## Hi there 👋
 
