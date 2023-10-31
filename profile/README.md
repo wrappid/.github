@@ -39,7 +39,7 @@ Follow the below steps to get going.
 
 First you need to verify that your system fulfills the pre-requisites. Listed below are the things required to be available in your system.
 
-- Node.js - version 16
+- Node.js - [version 16](https://nodejs.org/en/blog/release/v16.20.0)
 - npm - version 8
 
 #### Checking your version of Node.js and npm
@@ -73,21 +73,21 @@ To use `Wrappid Toolkit`, you need to install `Wrappid Toolkit` globally in your
 >
 > _The `Wrappid Toolkit` is available in the GitHub npm pkg registry. You will have to setup scoped pkg registry as your npm runtime configuration._
 >
-> _Run the below commands to setup scoped pkg registry:_
->
-> <!--C:\Users\Sam>-->
->
-> ```terminal
-> npm config set @wrappid:registry https://npm.pkg.github.com/wrappid
->
-> npm config set //npm.pkg.github.com/:_authToken <WRAPPID_TOKEN>
-> ```
->
 > _Please fill [Wrappid Early Access Request form](https://forms.gle/NCUbSXvsX1v9QhD96) to get a valid_ `<WRAPPID_TOKEN>`. After filling the form you will receive the `<WRAPPID_TOKEN>` in your email.
 >
 > _The above mentioned_ `<WRAPPID_TOKEN>` _could only be used to read and download the `Wrappid Toolkit` package._
 >
 > <br/>
+
+ _Run the below commands to setup scoped pkg registry:_
+
+ <!--C:\Users\Sam>-->
+
+ ```terminal
+ npm config set @wrappid:registry https://npm.pkg.github.com/wrappid
+
+ npm config set //npm.pkg.github.com/:_authToken <WRAPPID_TOKEN>
+ ```
 
 <br/>Run the below command to install `Wrappid Toolkit` globally in your system.
 
