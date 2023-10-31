@@ -105,7 +105,7 @@ This should show you the exact version of `Wrappid Toolkit` installed
 
 ```terminal
 wrappid -V
-v0.0.14
+v0.0.100
 ```
 
 ### 3. One-time Initialisation
