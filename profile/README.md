@@ -39,11 +39,16 @@ Follow the below steps to get going.
 
 First you need to verify that your system fulfills the pre-requisites. Listed below are the things required to be available in your system.
 
-- Node.js - [version 16.20.X](https://nodejs.org/en/blog/release/v16.20.0)
+Required for web app development:
+- [Node.js - version 16.20.X](https://nodejs.org/en/blog/release/v16.20.0)
 - npm - version 8
+> **_Note:_**_To set up node 16.20.x & npm 8.x.x, follow the documentation [here](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)._
 Required for mobile app development:
+- Required steps for web app development
 - JDK - 11 
 - Android Studio
+Recommended Code editor:
+- [VS Code](https://code.visualstudio.com/)/[VS Codium](https://vscodium.com/)
 
 #### Checking your version of Node.js and npm
 
@@ -78,7 +83,7 @@ To use `Wrappid Toolkit`, you need to install `Wrappid Toolkit` globally in your
 >
 > _Please fill [Wrappid Early Access Request form](https://forms.gle/NCUbSXvsX1v9QhD96) to get a valid_ `<WRAPPID_TOKEN>`. After filling the form you will receive the `<WRAPPID_TOKEN>` in your email.
 >
-> _The above mentioned_ `<WRAPPID_TOKEN>` _could only be used to read and download the `Wrappid Toolkit` package._
+> _The above mentioned_ `<WRAPPID_TOKEN>` _could only be used to read and download the `Wrappid` packages._
 >
 > <br/>
 
@@ -152,7 +157,7 @@ This is a automated process but you will be prompted with GitHub CLI or `gh` ins
 >
 > _If you are still not taken to authentication instructions, run `gh auth login` and complete your authentication manually._
 >
-> [Know more about GitHub CLI](https://cli.github.com/manual)
+> _[Know more about GitHub CLI](https://cli.github.com/manual)_
 >
 > <br/>
 
@@ -202,12 +207,13 @@ This will create 3 `Wrappid` projects with project names
 `<project_name>-service`  
 -->
 
-### `Wrappid Toolkit` Usage Documentation
-
-Run the below command to find other `[command] [subcommand] [arguments] [options]` supported by the `Wrappid Toolkit`.
-```terminal
-wrappid --help
-```
+>**_Note_**: Now you can use the wrappid toolkit
+>#### _`Wrappid Toolkit` Usage Documentation_
+>
+>_Run the below command to find other `[command] [subcommand] [arguments] [options]` supported by the `Wrappid Toolkit`._
+>```terminal
+>wrappid --help
+>```
 
 <!-- This will create 3 `Wrappid` projects, `<project_name>-app`, `<project_name>-module` and `<project_name>-service` -->
 <!--
@@ -299,7 +305,7 @@ Run the below command to initialize a `Wrappid` project with a specified project
 wrappid init <project_name>
 ```
 
-This will create 3 `Wrappid` projects with project names at once
+This will create 3 `Wrappid` projects with project names at once  
 `<project_name>-app`  
 `<project_name>-module` and  
 `<project_name>-service`  
