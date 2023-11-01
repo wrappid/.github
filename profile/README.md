@@ -33,7 +33,7 @@ Follow the below steps to get going.
 1. Verify Pre-requisites
 2. Install `Wrappid Toolkit`
 3. One-time Initialisation
-4. Setup `Wrappid` Project(s)
+4. Get started with `Wrappid` Project(s)
 
 ### 1. Verify Pre-requisites
 
@@ -202,7 +202,7 @@ This will create 3 `Wrappid` projects with project names
 `<project_name>-service`  
 -->
 
-## `Wrappid Toolkit` Usage Documentation
+### `Wrappid Toolkit` Usage Documentation
 
 Run the below command to find other `[command] [subcommand] [arguments] [options]` supported by the `Wrappid Toolkit`.
 ```terminal
@@ -284,7 +284,7 @@ wrappid start
 This should launch your default browser with a URL `http://localhost:3000`
 ```
 -->
-## Learn Wrappid in details
+## 4. Get started with `Wrappid` Project(s)
 
 `Wrappid` Framework supports building frontend, backend (API middleware & DB handling) and business specific modules. The framework helps generate the below:
 
