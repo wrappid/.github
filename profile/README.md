@@ -185,7 +185,7 @@ gh version 2.28.0 (2023-04-25)
 https://github.com/cli/cli/releases/tag/v2.28.0
 ``` -->
 
-
+<!--
 ### 4. `Wrappid` Project Setup
 
 #### 1. Initialize a `Wrappid` project
@@ -200,8 +200,17 @@ This will create 3 `Wrappid` projects with project names
 `<project_name>-app`  
 `<project_name>-module` and  
 `<project_name>-service`  
-<!-- This will create 3 `Wrappid` projects, `<project_name>-app`, `<project_name>-module` and `<project_name>-service` -->
+-->
 
+## `Wrappid Toolkit` Usage Documentation
+
+Run the below command to find other `[command] [subcommand] [arguments] [options]` supported by the `Wrappid Toolkit`.
+```terminal
+wrappid --help
+```
+
+<!-- This will create 3 `Wrappid` projects, `<project_name>-app`, `<project_name>-module` and `<project_name>-service` -->
+<!--
 #### 2. Setup a `Wrappid` project.
 
 ##### 1. Setup `Wrappid-App` project.
@@ -282,6 +291,18 @@ This should launch your default browser with a URL `http://localhost:3000`
 1. Frontend - `<wrappid>-app`
 2. Backend - `<wrappid>-service`
 3. Modules - `<wrappid>-module`
+
+
+Run the below command to initialize a `Wrappid` project with a specified project name.
+
+```terminal
+wrappid init <project_name>
+```
+
+This will create 3 `Wrappid` projects with project names at once
+`<project_name>-app`  
+`<project_name>-module` and  
+`<project_name>-service`  
 
 ### Frontend - `<wrappid>-app`
 
@@ -370,7 +391,7 @@ Wrappid modules are hot swappable, you can `include` and `exclude` a module whil
 ### Starting a Wrappid Project.
 
 ##### 1. Starting Wrappid Frontend project
-To start your Fontend Wrappid project, you'll first need your Wrappid Backend up and running. [steps for backend]() 
+To start your Fontend Wrappid project, you'll first need your Wrappid Backend up and running. [steps for backend](https://github.com/wrappid/#2-starting-backend-project).  
 Enter you Backend URL in `wrappid.conf.json` file located at the root of `wrappid-app` project.
   
 Run the below command to start the development frontend server for web:
