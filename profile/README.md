@@ -39,8 +39,11 @@ Follow the below steps to get going.
 
 First you need to verify that your system fulfills the pre-requisites. Listed below are the things required to be available in your system.
 
-- Node.js - [version 16](https://nodejs.org/en/blog/release/v16.20.0)
+- Node.js - [version 16.20.X](https://nodejs.org/en/blog/release/v16.20.0)
 - npm - version 8
+Required for mobile app development:
+- JDK - 11 
+- Android Studio
 
 #### Checking your version of Node.js and npm
 
@@ -130,6 +133,29 @@ This is a automated process. You need not do anything.
 
 This is a automated process but you will be prompted with GitHub CLI or `gh` installation. Kindly click Next -> Next -> ... -> Finish to complete the GitHub CLI or `gh` installation.
 
+> <br/>
+>
+> **_Note:_**
+>
+> _If you get an error during the course of execution of the command (`wrappid install`), or find that `gh` isn't working, which generally looks like the below:_
+>
+> ```terminal
+> 'gh' is not recognized as an internal or external command,
+> operable program or batch file.
+> ```
+>
+> _Close all terminals/cmd and open a fresh terminal/cmd and run `gh` or `gh --version` to confirm GitHub CLI installation._
+>
+> _If `gh` still doesn't work, go to the [official documentation of GitHub CLI](https://github.com/cli/cli#installation) and install `gh` manually._
+>
+> _After successfull installation of GitHub CLI or `gh`, run `wrappid install` again._
+>
+> _If you are still not taken to authentication instructions, run `gh auth login` and complete your authentication manually._
+>
+> [Know more about GitHub CLI](https://cli.github.com/manual)
+>
+> <br/>
+
 #### 3.3. Authenticate with GitHub A/c to use GitHub CLI or `gh`
 
 When prompted, follow on-screen instructions to authenticate yourself with your GitHub A/c. It starts like:
@@ -159,30 +185,8 @@ gh version 2.28.0 (2023-04-25)
 https://github.com/cli/cli/releases/tag/v2.28.0
 ``` -->
 
-> <br/>
->
-> **_Note:_**
->
-> _If you get an error during the course of execution of the command (`wrappid install`), or find that `gh` isn't working, which generally looks like the below:_
->
-> ```terminal
-> 'gh' is not recognized as an internal or external command,
-> operable program or batch file.
-> ```
->
-> _Close all terminals/cmd and open a fresh terminal/cmd and run `gh` or `gh --version` to confirm GitHub CLI installation._
->
-> _If `gh` still doesn't work, go to the [official documentation of GitHub CLI](https://github.com/cli/cli#installation) and install `gh` manually._
->
-> _After successfull installation of GitHub CLI or `gh`, run `wrappid install` again._
->
-> _If you are still not taken to authentication instructions, run `gh auth login` and complete your authentication manually._
->
-> [Know more about GitHub CLI](https://cli.github.com/manual)
->
-> <br/>
 
-### 4. Setup `Wrappid` Project
+### 4. `Wrappid` Project Setup
 
 #### 1. Initialize a `Wrappid` project
 
@@ -196,27 +200,45 @@ This will create 3 `Wrappid` projects with project names
 `<project_name>-app`  
 `<project_name>-module` and  
 `<project_name>-service`  
-<!-- This will create 3 `Wrappid` projects with default project names `wrappid-app`, `wrappid-module` and `wrappid-service` -->
+<!-- This will create 3 `Wrappid` projects, `<project_name>-app`, `<project_name>-module` and `<project_name>-service` -->
 
-#### 2. Setup a `Wrappid` project
-Run the below command to setup a wrappid-app:
+#### 2. Setup a `Wrappid` project.
+
+##### 1. Setup `Wrappid-App` project.
+After successfull initialization of a `wrappid-app`, change your directory to root of `<projectName>-<app>` wrappid project.
+
+`Wrappid-App` has two runtime-environments, web and mobile.
+Run the below command to setup a `wrappid-app` in web and mobile runtime-environments.
 
 ```bash
-cd wrappid-app
+wrappid setup
+```
+
+Run the below command to setup a `wrappid-app` in web runtime-environment.
+
+```bash
 wrappid setup web
 ```
+
+Run the below command to setup a `wrappid-app` in mobile runtime-environment.
+
+```bash
+wrappid setup mobile
+```
+
+##### 2. Setup `Wrappid-Service` project.
+After successfull initialization of `wrappid-service`, change your directory to root of `<projectName>-<service>` wrappid project.
 
 Run the below command to setup a wrappid-service:
 
 ```bash
-cd wrappid-service
 wrappid setup service
 ```
 
 #### 3. Start Your `Wrappid` project
 
-After you are done with setup, you can start wrappid-app in 2 environment, web and mobile.
-
+##### 1. Start `Wrappid-App` project
+After you are done with setup, you can start wrappid-app in two runtime-environments, web and mobile.  
 Run the below command to start the development frontend server for web:
 ```bash
 cd wrappid-app
@@ -224,11 +246,12 @@ wrappid start web
 ```
 
 Run the below command to start the development server for mobile:
-
+> _Note: You must have JDK 11 and Android Studio setup to start mobile_
 ```bash
 cd wrappid-app
 wrappid start mobile
 ```
+##### 2. Start `Wrappid-Service` project
 
 Run the below command to start the development backend service :
 
@@ -236,7 +259,6 @@ Run the below command to start the development backend service :
 cd wrappid-service
 wrappid start
 ```
-
 ## `Wrappid Toolkit` Usage Documentation
 
 Run the below command to find other `[command] [subcommand] [arguments] [options]` supported by the `Wrappid Toolkit`.
@@ -261,7 +283,7 @@ This should launch your default browser with a URL `http://localhost:3000`
 2. Backend - `<wrappid>-service`
 3. Modules - `<wrappid>-module`
 
-### 1. Frontend - `<wrappid>-app`
+### Frontend - `<wrappid>-app`
 
 The `<wrappid>-app` is based on `React` and `React Native`.
 
@@ -272,8 +294,29 @@ Run the below command to create Frontend Wrappid Project
 ```terminal
 wrappid init app <project_name>
 ```
+`Wrappid-App` has two runtime-environments, web and mobile.
+Run the below command to setup a Frontend Wrappid Project in web and mobile runtime-environments.
 
-### 2. Backend - `<wrappid> service`
+```bash
+cd <project_name>-<app>
+wrappid setup
+```
+
+Run the below command to setup a `wrappid-app` in web runtime-environment.
+
+```bash
+cd <project_name>-<app>
+wrappid setup web
+```
+
+Run the below command to setup a `wrappid-app` in mobile runtime-environment.
+
+```bash
+cd <project_name>-<app>
+wrappid setup mobile
+```
+
+### Backend - `<wrappid>-service`
 
 The `<wrappid>-service` is based on `node` and `express`.
 
@@ -285,14 +328,100 @@ Run the below command to create Backend Wrappid Project
 wrappid init service <project_name>
 ```
 
-### 3. Modules - `<wrappid>-module`
+Run the below command to setup the development Backend Project :
 
-Run the below command to create Frontend Wrappid Project
+```bash
+cd <project_name>-service
+wrappid setup
+```
+
+
+### Modules - `<wrappid>-module`
+
+Run the below command to create Module Wrappid Project
 
 ```terminal
 wrappid init module <project_name>
 ```
 
+Now you have a <project_name>-<module> Module Wrappid Project at the directory the command was executed from.
+To use Wrappid module projects
+
+- You need to `include` the module into your `wrappid-[app|service]`.
+- Your module must be located in the parent directory of  `wrappid-[app|service]` project.
+- Your `wrappid-[app|service]` should be setup.
+- 
+Run the below command from the root of the `wrappid-[app|service]` project you wish to include your module.
+```terminal
+wrappid include <module-name>
+```
+
+Make sure to not write `-module` following your <module-name>
+
+Now, to exclude a module from your `wrappid-[app|service]`, run the below command.
+```terminal
+wrappid exclude <module>-name
+```
+
+Make sure to not write `-module` following your <module-name>
+
+Wrappid modules are hot swappable, you can `include` and `exclude` a module while `wrappid-[app|service]` is running
+
+### Starting a Wrappid Project.
+
+##### 1. Starting Wrappid Frontend project
+To start your Fontend Wrappid project, you'll first need your Wrappid Backend up and running. [steps for backend]() 
+Enter you Backend URL in `wrappid.conf.json` file located at the root of `wrappid-app` project.
+  
+Run the below command to start the development frontend server for web:
+```bash
+cd wrappid-app
+wrappid start web
+```
+By default wrappid-app web runtime env runs at `localhost:3000`
+
+Run the below command to start the development server for mobile:
+
+```bash
+cd wrappid-app
+wrappid start mobile
+```
+
+##### 2. Starting Backend project
+
+To Start a Backend Wrappid Service project, follow below steps:
+
+- Change directory to  `wrappid-service` project.
+- Setup `wrappid-service` project. (Skip this step if you already setup)
+- `Include` your `wrappid-modules` if any.
+- Enter you database credential in `wrappid.conf.json` file located at the root of `wrappid-service` project.
+- Finally run the below command to start your development Wrappid Backend Project
+  ```terminal
+  wrappid start
+  ```
+- By default, your backend will run at port : ``
+
+### Wrappid Environments
+Wrappid projects can be runned in 3 environments:
+- Dev: Suitable for Development
+- Stage: Suitable for Testing
+- Prod: Suitable for Testing
+
+By default, Wrappid project setups and starts in `dev` environment.
+These environments are to be configured in wrappid.conf.json located at the root of `wrappid-[app|service]` project
+
+To run a Wrappid-[app|service] project in a different environment, run the below command:
+```terminal
+cd wrappid-app
+wrappid start [web|mobile] --env=[dev|stage|prod]
+
+```
+```terminal
+cd wrappid-service
+wrappid start --env=[dev|stage|prod]
+```
+
+###
 The `cd` command changes the directory you're working with. In order to work with your newly created Wrappid-App, you'll need to navigate the terminal there.
 
 The `wrappid start <project-type>` command starts development server, ready for you to view at http://localhost:3000/. Make sure to keep the port free!
@@ -406,7 +535,9 @@ wrappid add <modulename> - old
 wrappid build web
 wrappid build android
 
+
 ```
+<!--
 wrappid-dev cli
 Alias: `wdev`, `wd`.
 
@@ -427,3 +558,5 @@ Commands:
   reload [web|mobile] --pkg [core|native|styles] Reload wdpkg (wrappid development packages) in web and mobile runtime
   
 ```
+
+-->
