@@ -58,20 +58,13 @@ To see if you already have Node.js and npm installed and check the installed ver
 
 ```terminal
 node -v
-npm -v
-```
-
-#### Refer the exact version we use:
-
-```terminal
-node -v
-v16.18.1
+v16.20.0
 
 npm -v
 8.19.2
 ```
 
-Please install them if they are not available in your system. Kindly follow original installation guide to do so.
+> **_Note:_** _Above mentioned version is based on the time of documentation, 16.20.(x), 8.(x).(x), x may differ._
 
 ### 2. Install `Wrappid Toolkit`
 
