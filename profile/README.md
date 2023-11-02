@@ -61,7 +61,7 @@ node -v
 v16.20.0
 
 npm -v
-8.19.2
+8.19.4
 ```
 
 > **_Note:_** _Above mentioned version is based on the time of documentation, 16.20.(x), 8.(x).(x), x may differ._
