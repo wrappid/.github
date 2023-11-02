@@ -305,6 +305,7 @@ This will create 3 `Wrappid` projects with project names at once
 `<project_name>-module` and  
 `<project_name>-service`  
 
+> **_Note:_** _From now, we will refer <project_name> as <wrappid>_
 ### Frontend - `<wrappid>-app`
 
 The `<wrappid>-app` is based on `React` and `React Native`.
