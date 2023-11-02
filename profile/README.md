@@ -42,7 +42,9 @@ First you need to verify that your system fulfills the pre-requisites. Listed be
 Required for web app development:
 - [Node.js - version 16.20.X](https://nodejs.org/en/blog/release/v16.20.0)
 - npm - version 8
-> **_Note:_**_To set up node 16.20.x & npm 8.x.x, follow the documentation [here](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)._
+> **_Note:_** _ If you have multiple node versions, to set up node 16.20.x & npm 8.x.x, follow the documentation [here](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)._  
+
+
 Required for mobile app development:
 - Required steps for web app development
 - JDK - 11 
