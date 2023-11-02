@@ -367,10 +367,10 @@ Run the below command to create Module Wrappid Project
 wrappid init module <project_name>
 ```
 
-Now you have a <project_name>-<module> Module Wrappid Project at the directory the command was executed from.
+Now you have a `<project_name>-<module>` Module Wrappid Project at the directory the command was executed from.
 To use Wrappid module projects
 
-- You need to `include` the module into your `wrappid-[app|service]`.
+- You need to `include` the module into your `wrappid-[app|service]`, from inside of the root of `wrappid-[app|service]`.
 - Your module must be located in the parent directory of  `wrappid-[app|service]` project.
 - Your `wrappid-[app|service]` should be setup.
 - 
