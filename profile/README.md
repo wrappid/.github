@@ -408,10 +408,10 @@ wrappid setup
 ### 4.3. Module - `<wrappid>-module`
 
 Now we will learn to:
-1. Initialize a backend wrappid-service
+1. Initialize a wrappid-module
 2. Include or exclude a wrappid-module from `wrappid-[app|service]`
 
-#### 4.3.1. Initialize a backend wrappid-service
+#### 4.3.1. Initialize a wrappid-module
 Run the below command to create Module Wrappid Project
 
 ```terminal
