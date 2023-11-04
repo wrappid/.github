@@ -49,7 +49,7 @@ Required for web app development:
 Required for mobile app development:
 - Required steps for web app development
 - JDK - 11 
-- Android Studio
+- Android Studio   
 Recommended Code editor:   
 - [VS Code](https://code.visualstudio.com/)/[VS Codium](https://vscodium.com/)
 
@@ -316,7 +316,7 @@ This will create 3 `Wrappid` project repositories with project names(user input)
 
 
 
-> **_Note:_** _From now, we will refer <project_name> as <wrappid>_  
+> **_Note:_** _From now, we will refer <project_name> as \<wrappid>_  
 
 ### 4.1. Frontend - `<wrappid>-app`
 
