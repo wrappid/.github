@@ -34,6 +34,7 @@ Follow the below steps to get going.
 2. Install `Wrappid Toolkit`
 3. One-time Initialisation
 4. Get started with `Wrappid` Project(s)
+5. Run `Wrappid` project.
 
 ### 1. Verify Pre-requisites
 
@@ -301,7 +302,6 @@ Run the below command to initialize a `Wrappid` project with a specified project
 wrappid init <project_name>
 ```
 
-#### Output
 This will create 3 `Wrappid` project repositories with project names(user input) in your github account repository and 3 same 3 repositories locally with wrappid-modules at your path of command execution.
 1. Frontend   
 `<project_name>-app`  
@@ -310,13 +310,15 @@ This will create 3 `Wrappid` project repositories with project names(user input)
 3. Backend   
 `<project_name>-service`  
 
+#### Output
+
 ![init](https://github.com/wrappid/.github/assets/61864488/29bca9c0-74c8-4ea3-9264-877d206ac0f5)
 
 
 
 > **_Note:_** _From now, we will refer <project_name> as <wrappid>_  
 
-### 1. Frontend - `<wrappid>-app`
+### 4.1. Frontend - `<wrappid>-app`
 
 The `<wrappid>-app` is based on `React` and `React Native`.
 
@@ -327,14 +329,14 @@ Now we will learn:
 2. Initialize a frontend wrappid-app
 3. Set up a frontend wrappid-app
 
-### 1. Frontend runtime environments
+#### 4.1.1. Frontend runtime environments
 Frontend `Wrappid-App` has two runtime-environments:
 - Web
 - Mobile
 
 We will talk about these environments in upcomming sections.
 
-#### 2. Initialize a frontend wrappid-app
+#### 4.1.2. Initialize a frontend wrappid-app
 
 Run the below command to create Frontend Wrappid Project
 
@@ -346,7 +348,7 @@ wrappid init app <wrappid>
 ![wrappid-app](https://github.com/wrappid/.github/assets/61864488/c7b6f0ae-bc7c-4008-87d0-96994839002a)
 
 
-### 3. Set up a frontend wrappid-app
+#### 4.1.3. Set up a frontend wrappid-app
 
 Run the below command to setup a Frontend Wrappid Project in web and mobile runtime-environments.
 
@@ -369,7 +371,7 @@ cd <wrappid>-<app>
 wrappid setup mobile
 ```
 
-### 2. Backend - `<wrappid>-service`
+### 4.2. Backend - `<wrappid>-service`
 
 The `<wrappid>-service` is based on `node` and `express`.
 
@@ -381,7 +383,7 @@ Now we will learn to:
 
 in a similar manner as wrappid-app.
 
-#### 1. Initialize a backend wrappid-service
+#### 4.2.1. Initialize a backend wrappid-service
 Run the below command to create Backend Wrappid Project
 
 ```terminal
@@ -392,7 +394,7 @@ wrappid init service <wrappid>
 ![wrappid-service](https://github.com/wrappid/.github/assets/61864488/b5c91ac7-f30f-48e7-b3f3-f0e736f27e95)
 
 
-#### 2. Set up a backend wrappid-service
+#### 4.2.2. Set up a backend wrappid-service
 Run the below command to setup the development Backend Project :
 
 ```bash
@@ -403,13 +405,13 @@ wrappid setup
 > **_Note:_** _Backend wrappid-service doesn't have any runtime environments_
 
 
-### 3. Module - `<wrappid>-module`
+### 4.3. Module - `<wrappid>-module`
 
 Now we will learn to:
 1. Initialize a backend wrappid-service
 2. Include or exclude a wrappid-module from `wrappid-[app|service]`
 
-#### 1. Initialize a backend wrappid-service
+#### 4.3.1. Initialize a backend wrappid-service
 Run the below command to create Module Wrappid Project
 
 ```terminal
@@ -422,7 +424,7 @@ wrappid init module <wrappid>
 
 Now you have a `<wrappid>-<module>` Module Wrappid Project at the directory the command was executed from.
 
-#### 2. Include or exclude a wrappid-module from `wrappid-[app|service]`
+#### 4.3.2. Include or exclude a wrappid-module from `wrappid-[app|service]`
 
 > **_Note:_** _You cannot setup or start a wrappid-module project like wrappid-app and wrappid-service._   
 
@@ -449,12 +451,13 @@ Make sure to not write `-module` following your <module-name>
 
 Wrappid modules are hot swappable, you can `include` and `exclude` a module while `wrappid-[app|service]` is running
 
-### Starting a Wrappid Projects.
+### 5. Run `Wrappid` project.
 Now time to see some action:
 1. Start a Wrappid Frontend project
 2. Start a Backend project
+3. Wrappid Environments
 
-##### 1. Start a Wrappid Frontend project
+### 5.1. Start a Wrappid Frontend project
 You can start a frontend app in two modes:
 - Static (Without Backend Service)
 - Dynamic (With Backend Service)
@@ -480,7 +483,7 @@ To start Dynamic Fontend Wrappid project, you'll first need your Wrappid Backend
  - Enter you Backend URL in `wrappid.conf.json` file located at the root of `wrappid-app` project.
  - Follow the same steps for starting a [static frontend wrappid-app]()
 
-##### 2. Start a Backend project
+### 5.2. Start a Backend project
 
 To Start a Backend Wrappid Service project, follow below steps:
 
@@ -494,7 +497,7 @@ To Start a Backend Wrappid Service project, follow below steps:
   ```
 - By default, your backend will run at port : ``
 
-### Wrappid Environments
+### 5.3 Wrappid Environments
 Wrappid projects can be runned in 3 environments:
 - Dev: Suitable for Development
 - Stage: Suitable for Testing
