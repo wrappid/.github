@@ -302,13 +302,15 @@ wrappid init <project_name>
 ```
 
 #### Output
-This will create 3 `Wrappid` project repositories with project names(user input) in your github account repository and in your path of command execution.
+This will create 3 `Wrappid` project repositories with project names(user input) in your github account repository and 3 same 3 repositories locally with wrappid-modules at your path of command execution.
 1. Frontend   
 `<project_name>-app`  
 2. Module   
 `<project_name>-module`
 3. Backend   
 `<project_name>-service`  
+
+![init](https://github.com/wrappid/.github/assets/61864488/29bca9c0-74c8-4ea3-9264-877d206ac0f5)
 
 
 
@@ -341,6 +343,8 @@ wrappid init app <wrappid>
 ```
 
 **Output:**  
+![wrappid-app](https://github.com/wrappid/.github/assets/61864488/c7b6f0ae-bc7c-4008-87d0-96994839002a)
+
 
 ### 3. Set up a frontend wrappid-app
 
@@ -385,6 +389,8 @@ wrappid init service <wrappid>
 ```
 
 **Output:**  
+![wrappid-service](https://github.com/wrappid/.github/assets/61864488/b5c91ac7-f30f-48e7-b3f3-f0e736f27e95)
+
 
 #### 2. Set up a backend wrappid-service
 Run the below command to setup the development Backend Project :
@@ -411,6 +417,8 @@ wrappid init module <wrappid>
 ```
 
 **Output:**  
+![wrappid-module](https://github.com/wrappid/.github/assets/61864488/fc0f4866-43d5-4e3a-92a6-7b3e0aa768ab)
+
 
 Now you have a `<wrappid>-<module>` Module Wrappid Project at the directory the command was executed from.
 
