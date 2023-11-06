@@ -16,6 +16,37 @@
 
 # Wrapper Framework for Rapid development
 
+**Table of Content**
+- [Wrapper Framework for Rapid development](#wrapper-framework-for-rapid-development)
+  - [`Wrappid` Framework is a wrapper framework built to enable rapid development of applications.](#wrappid-framework-is-a-wrapper-framework-built-to-enable-rapid-development-of-applications)
+  - [Getting Started](#getting-started)
+    - [1. Verify Pre-requisites](#1-verify-pre-requisites)
+    - [2. Install `Wrappid Toolkit`](#2-install-wrappid-toolkit)
+    - [3. One-time Initialisation](#3-one-time-initialisation)
+      - [3.1. Install package dependencies](#31-install-package-dependencies)
+      - [3.2. Download \& Install GitHub CLI or `gh` (if not already installed)](#32-download--install-github-cli-or-gh-if-not-already-installed)
+      - [3.3. Authenticate with GitHub A/c to use GitHub CLI or `gh`](#33-authenticate-with-github-ac-to-use-github-cli-or-gh)
+  - [4. Get started with `Wrappid` Project(s)](#4-get-started-with-wrappid-projects)
+      - [Output](#output)
+    - [4.1. Frontend - `<wrappid>-app`](#41-frontend---wrappid-app)
+      - [4.1.1. Frontend runtime environments](#411-frontend-runtime-environments)
+      - [4.1.2. Initialize a frontend wrappid-app](#412-initialize-a-frontend-wrappid-app)
+      - [4.1.3. Set up a frontend wrappid-app](#413-set-up-a-frontend-wrappid-app)
+    - [4.2. Backend - `<wrappid>-service`](#42-backend---wrappid-service)
+      - [4.2.1. Initialize a backend wrappid-service](#421-initialize-a-backend-wrappid-service)
+      - [4.2.2. Set up a backend wrappid-service](#422-set-up-a-backend-wrappid-service)
+    - [4.3. Module - `<wrappid>-module`](#43-module---wrappid-module)
+      - [4.3.1. Initialize a wrappid-module](#431-initialize-a-wrappid-module)
+      - [4.3.2. Include or exclude a wrappid-module from `wrappid-[app|service]`](#432-include-or-exclude-a-wrappid-module-from-wrappid-appservice)
+    - [5. Run `Wrappid` project.](#5-run-wrappid-project)
+    - [5.1. Start a Wrappid Frontend project](#51-start-a-wrappid-frontend-project)
+    - [5.2. Start a Backend project](#52-start-a-backend-project)
+    - [5.3 Wrappid Environments](#53-wrappid-environments)
+    - [Tips:](#tips)
+- [Learn Wrappid In Details](#learn-wrappid-in-details)
+    - [All commands for ref:](#all-commands-for-ref)
+
+
 ## `Wrappid` Framework is a wrapper framework built to enable rapid development of applications.
 
 `Wrappid` Framework is a wrapper framework built to enable rapid development of applications based on `React`, `React Native`, `Node`, `Express`, etc. Here, you **write code once** and use `Wrappid Toolkit` to build your web and mobile applications simultaneously.
@@ -44,6 +75,7 @@ Please verify the pre-requisites listed below:
 Required for web app development:
 - [Node.js - version 16.20.X](https://nodejs.org/en/blog/release/v16.20.0)
 - npm - version 8.X.X
+
 > **_Note:_** _If you have multiple node versions, to set up node 16.20.x & npm 8.x.x, follow the documentation [here](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)._  
 
 
@@ -363,21 +395,21 @@ wrappid init app <wrappid>
 Run the below command to setup a Frontend Wrappid Project in web and mobile runtime-environments.
 
 ```bash
-cd <wrappid>-<app>
+cd <wrappid>-app
 wrappid setup
 ```
 
 Run the below command to setup a `wrappid-app` in web runtime-environment.
 
 ```bash
-cd <wrappid>-<app>
+cd <wrappid>-app
 wrappid setup web
 ```
 
 Run the below command to setup a `wrappid-app` in mobile runtime-environment.
 
 ```bash
-cd <wrappid>-<app>
+cd <wrappid>-app
 wrappid setup mobile
 ```
 
@@ -463,9 +495,9 @@ Wrappid modules are hot swappable, you can `include` and `exclude` a module whil
 
 ### 5. Run `Wrappid` project.
 Now time to see some action:
-1. Start a Wrappid Frontend project
-2. Start a Backend project
-3. Wrappid Environments
+1. [Start a Wrappid Frontend project]()
+2. [Start a Backend project]()
+3. [Wrappid Environments]()
 
 ### 5.1. Start a Wrappid Frontend project
 You can start a frontend app in two modes:
