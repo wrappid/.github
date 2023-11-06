@@ -38,20 +38,13 @@ Follow the below steps to get going.
 
 ### 1. Verify Pre-requisites
 
-First you need to verify that your system fulfills the pre-requisites. Listed below are the things required to be available in your system.
+<!-- First you need to verify that your system fulfills the pre-requisites. Listed below are the things required to be available in your system. -->
+Please verify the pre-requisites listed below:
 
 Required for web app development:
 - [Node.js - version 16.20.X](https://nodejs.org/en/blog/release/v16.20.0)
-- npm - version 8
+- npm - version 8.X.X
 > **_Note:_** _If you have multiple node versions, to set up node 16.20.x & npm 8.x.x, follow the documentation [here](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)._  
-
-
-Required for mobile app development:
-- Required steps for web app development
-- JDK - 11 
-- Android Studio
-Recommended Code editor:   
-- [VS Code](https://code.visualstudio.com/)/[VS Codium](https://vscodium.com/)
 
 **Check your version of Node.js and npm**
 
@@ -67,15 +60,25 @@ npm -v
 
 > **_Note:_** _Above mentioned version is based on the time of documentation, 16.20.(x), 8.(x).(x), x may differ._
 
+
+Required for mobile app development:
+- Required steps for web app development
+- JDK - 11 
+- Android Studio
+Recommended Code editor:   
+- [VS Code](https://code.visualstudio.com/)/[VS Codium](https://vscodium.com/)
+
+
+
 ### 2. Install `Wrappid Toolkit`
 
-To use `Wrappid Toolkit`, you need to install `Wrappid Toolkit` globally in your system.
+To use `Wrappid Toolkit`, you need to setup scoped wrappid package registry and install `@wrappid/toolkit` globally in your system.
 
 > <br/>
 >
 > **_Note:_**
 >
-> _The `Wrappid Toolkit` is available in the GitHub npm pkg registry. You will have to setup scoped pkg registry as your npm runtime configuration._
+<!-- > _The `@wrappid/toolkit` is available in the GitHub npm package registry. You will have to setup scoped package registry as your npm runtime configuration._ -->
 >
 > _Please fill [Wrappid Early Access Request form](https://forms.gle/NCUbSXvsX1v9QhD96) to get a valid_ `<WRAPPID_TOKEN>`. After filling the form you will receive the `<WRAPPID_TOKEN>` in your email.
 >
@@ -83,7 +86,7 @@ To use `Wrappid Toolkit`, you need to install `Wrappid Toolkit` globally in your
 >
 > <br/>
 
- _Run the below commands to setup scoped pkg registry:_
+ _Run the below commands to setup scoped package registry:_
 
  <!--C:\Users\Sam>-->
 
@@ -132,7 +135,13 @@ This is a automated process. You need not do anything.
 
 #### 3.2. Download & Install GitHub CLI or `gh` (if not already installed)
 
-This is a automated process but you will be prompted with GitHub CLI or `gh` installation. Kindly click Next -> Next -> ... -> Finish to complete the GitHub CLI or `gh` installation.
+This is a automated process but you will be prompted with GitHub CLI or `gh` installation. 
+
+For Windows:   
+Kindly click Next -> Next -> ... -> Finish to complete the GitHub CLI or `gh` installation.
+
+For Linux:
+Enter `sudo` password when prompted, and continue.
 
 > <br/>
 >
@@ -322,7 +331,7 @@ This will create 3 `Wrappid` project repositories with project names(user input)
 
 The `<wrappid>-app` is based on `React` and `React Native`.
 
-Here, you **write code once** and use `Wrappid Toolkit` to build your web and mobile applications simultaneously.
+Here, you **write code once** and use `Wrappid Toolkit` to run and build your web and mobile applications simultaneously.
 
 Now we will learn:
 1. Frontend runtime environments
