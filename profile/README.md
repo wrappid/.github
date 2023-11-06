@@ -46,6 +46,14 @@ Required for web app development:
 - npm - version 8.X.X
 > **_Note:_** _If you have multiple node versions, to set up node 16.20.x & npm 8.x.x, follow the documentation [here](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)._  
 
+
+Required for mobile app development:
+- Required steps for web app development
+- JDK - 11 
+- Android Studio   
+Recommended Code editor:   
+- [VS Code](https://code.visualstudio.com/)/[VS Codium](https://vscodium.com/)
+
 **Check your version of Node.js and npm**
 
 To see if you already have Node.js and npm installed and check the installed version, run the following commands:
@@ -325,7 +333,7 @@ This will create 3 `Wrappid` project repositories with project names(user input)
 
 
 
-> **_Note:_** _From now, we will refer <project_name> as <wrappid>_  
+> **_Note:_** _From now, we will refer <project_name> as \<wrappid>_  
 
 ### 4.1. Frontend - `<wrappid>-app`
 
@@ -417,10 +425,10 @@ wrappid setup
 ### 4.3. Module - `<wrappid>-module`
 
 Now we will learn to:
-1. Initialize a backend wrappid-service
+1. Initialize a wrappid-module
 2. Include or exclude a wrappid-module from `wrappid-[app|service]`
 
-#### 4.3.1. Initialize a backend wrappid-service
+#### 4.3.1. Initialize a wrappid-module
 Run the below command to create Module Wrappid Project
 
 ```terminal
