@@ -47,13 +47,6 @@ Required for web app development:
 > **_Note:_** _If you have multiple node versions, to set up node 16.20.x & npm 8.x.x, follow the documentation [here](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)._  
 
 
-Required for mobile app development:
-- Required steps for web app development
-- JDK - 11 
-- Android Studio   
-Recommended Code editor:   
-- [VS Code](https://code.visualstudio.com/)/[VS Codium](https://vscodium.com/)
-
 **Check your version of Node.js and npm**
 
 To see if you already have Node.js and npm installed and check the installed version, run the following commands:
