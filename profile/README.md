@@ -30,7 +30,7 @@
     - [4.1 How to Create Wrappid Projects?](#41-how-to-create-wrappid-projects)
       - [Output](#output)
     - [4.2 How to Setup Wrappid Project?](#42-how-to-setup-wrappid-project)
-    - [4.3 How to Start Wrappid Project?](#43-how-to-start-wrappid-project)
+    - [4.3 How to Start a Wrappid Project?](#43-how-to-start-a-wrappid-project)
     - [All commands for ref:](#all-commands-for-ref)
 
 
@@ -53,8 +53,6 @@ Follow the below steps to get going.
 [3. One-time Initialisation](#3-one-time-initialisation)   
 [4. Quick Start With Wrappid Project(s)](#4-quick-start-with-wrappid-projects)   
 
-1. 
-2. Run `Wrappid` project.
 
 ### 1. Check Pre-requisites
 
@@ -362,7 +360,7 @@ cd <project_name>-service
 wrappid setup
 ```
 
-### 4.3 How to Start Wrappid Project?
+### 4.3 How to Start a Wrappid Project?
 
 To start frontend wrappid-app in web or mobile, change directory to wrappid-app project
 
