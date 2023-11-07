@@ -20,30 +20,17 @@
 - [Wrapper Framework for Rapid development](#wrapper-framework-for-rapid-development)
   - [`Wrappid` Framework is a wrapper framework built to enable rapid development of applications.](#wrappid-framework-is-a-wrapper-framework-built-to-enable-rapid-development-of-applications)
   - [Getting Started](#getting-started)
-    - [1. Verify Pre-requisites](#1-verify-pre-requisites)
+    - [1. Check Pre-requisites](#1-check-pre-requisites)
     - [2. Install `Wrappid Toolkit`](#2-install-wrappid-toolkit)
     - [3. One-time Initialisation](#3-one-time-initialisation)
       - [3.1. Install package dependencies](#31-install-package-dependencies)
       - [3.2. Download \& Install GitHub CLI or `gh` (if not already installed)](#32-download--install-github-cli-or-gh-if-not-already-installed)
       - [3.3. Authenticate with GitHub A/c to use GitHub CLI or `gh`](#33-authenticate-with-github-ac-to-use-github-cli-or-gh)
-  - [4. Get started with `Wrappid` Project(s)](#4-get-started-with-wrappid-projects)
+  - [4. Quick Start With Wrappid Project(s)](#4-quick-start-with-wrappid-projects)
+    - [4.1 How to Create Wrappid Projects?](#41-how-to-create-wrappid-projects)
       - [Output](#output)
-    - [4.1. Frontend - `<wrappid>-app`](#41-frontend---wrappid-app)
-      - [4.1.1. Frontend runtime environments](#411-frontend-runtime-environments)
-      - [4.1.2. Initialize a frontend wrappid-app](#412-initialize-a-frontend-wrappid-app)
-      - [4.1.3. Set up a frontend wrappid-app](#413-set-up-a-frontend-wrappid-app)
-    - [4.2. Backend - `<wrappid>-service`](#42-backend---wrappid-service)
-      - [4.2.1. Initialize a backend wrappid-service](#421-initialize-a-backend-wrappid-service)
-      - [4.2.2. Set up a backend wrappid-service](#422-set-up-a-backend-wrappid-service)
-    - [4.3. Module - `<wrappid>-module`](#43-module---wrappid-module)
-      - [4.3.1. Initialize a wrappid-module](#431-initialize-a-wrappid-module)
-      - [4.3.2. Include or exclude a wrappid-module from `wrappid-[app|service]`](#432-include-or-exclude-a-wrappid-module-from-wrappid-appservice)
-    - [5. Run `Wrappid` project.](#5-run-wrappid-project)
-    - [5.1. Start a Wrappid Frontend project](#51-start-a-wrappid-frontend-project)
-    - [5.2. Start a Backend project](#52-start-a-backend-project)
-    - [5.3 Wrappid Environments](#53-wrappid-environments)
-    - [Tips:](#tips)
-- [Learn Wrappid In Details](#learn-wrappid-in-details)
+    - [4.2 How to Setup Wrappid Project?](#42-how-to-setup-wrappid-project)
+    - [4.3 How to Start Wrappid Project?](#43-how-to-start-wrappid-project)
     - [All commands for ref:](#all-commands-for-ref)
 
 
@@ -61,13 +48,15 @@ This getting started section will help you setup a basic `Wrappid` project envir
 
 Follow the below steps to get going.
 
-1. Verify Pre-requisites
-2. Install `Wrappid Toolkit`
-3. One-time Initialisation
-4. Get started with `Wrappid` Project(s)
-5. Run `Wrappid` project.
+[1. Check Pre-requisites](#1-check-pre-requisites)   
+[2. Install `Wrappid Toolkit`](#2-install-wrappid-toolkit)   
+[3. One-time Initialisation](#3-one-time-initialisation)   
+[4. Quick Start With Wrappid Project(s)](#4-quick-start-with-wrappid-projects)   
 
-### 1. Verify Pre-requisites
+1. 
+2. Run `Wrappid` project.
+
+### 1. Check Pre-requisites
 
 <!-- First you need to verify that your system fulfills the pre-requisites. Listed below are the things required to be available in your system. -->
 Please verify the pre-requisites listed below:
@@ -328,13 +317,14 @@ wrappid start
 This should launch your default browser with a URL `http://localhost:3000`
 ```
 -->
-## 4. Get started with `Wrappid` Project(s)
+## 4. Quick Start With Wrappid Project(s)
 
+### 4.1 How to Create Wrappid Projects?
 `Wrappid` Framework supports building frontend, backend (API middleware & DB handling) and business specific modules. Wrappid-Toolkit enables us to generates boilerplate applications.
 
-1. Frontend - `<wrappid>-app`
-2. Backend - `<wrappid>-service`
-3. Modules - `<wrappid>-module`
+1. [Frontend](https://github.com/wrappid/wrappid-app) - `<wrappid>-app`   
+2. [Backend](https://github.com/wrappid/wrappid-service) - `<wrappid>-service`   
+3. [Modules](https://github.com/wrappid/wrappid-module) - `<wrappid>-module`   
 
 > **_Note:_** _It is understood that you have installed wrappid toolkit and initialized it successfully_
 
@@ -357,215 +347,39 @@ This will create 3 `Wrappid` project repositories with project names(user input)
 ![init](https://github.com/wrappid/.github/assets/61864488/29bca9c0-74c8-4ea3-9264-877d206ac0f5)
 
 
-
-> **_Note:_** _From now, we will refer <project_name> as \<wrappid>_  
-
-### 4.1. Frontend - `<wrappid>-app`
-
-The `<wrappid>-app` is based on `React` and `React Native`.
-
-Here, you **write code once** and use `Wrappid Toolkit` to run and build your web and mobile applications simultaneously.
-
-Now we will learn:
-1. Frontend runtime environments
-2. Initialize a frontend wrappid-app
-3. Set up a frontend wrappid-app
-
-#### 4.1.1. Frontend runtime environments
-Frontend `Wrappid-App` has two runtime-environments:
-- Web
-- Mobile
-
-We will talk about these environments in upcomming sections.
-
-#### 4.1.2. Initialize a frontend wrappid-app
-
-Run the below command to create Frontend Wrappid Project
+### 4.2 How to Setup Wrappid Project?
+To setup frontend wrappid-app in web or mobile, change directory to wrappid-app project
 
 ```terminal
-wrappid init app <wrappid>
+cd <project_name>-app
+wrappid setup [web|mobile]
 ```
 
-**Output:**  
-![wrappid-app](https://github.com/wrappid/.github/assets/61864488/c7b6f0ae-bc7c-4008-87d0-96994839002a)
+To start backend wrappid-app, change directory to wrappid-service project
 
-
-#### 4.1.3. Set up a frontend wrappid-app
-
-Run the below command to setup a Frontend Wrappid Project in web and mobile runtime-environments.
-
-```bash
-cd <wrappid>-app
+```terminal
+cd <project_name>-service
 wrappid setup
 ```
 
-Run the below command to setup a `wrappid-app` in web runtime-environment.
+### 4.3 How to Start Wrappid Project?
 
-```bash
-cd <wrappid>-app
-wrappid setup web
-```
-
-Run the below command to setup a `wrappid-app` in mobile runtime-environment.
-
-```bash
-cd <wrappid>-app
-wrappid setup mobile
-```
-
-### 4.2. Backend - `<wrappid>-service`
-
-The `<wrappid>-service` is based on `node` and `express`.
-
-Here, the `Wrappid Toolkit` helps you build API middleware along with scripts to handle DB.
-
-Now we will learn to:
-1. Initialize a backend wrappid-service
-2. Set up a backend wrappid-service
-
-in a similar manner as wrappid-app.
-
-#### 4.2.1. Initialize a backend wrappid-service
-Run the below command to create Backend Wrappid Project
+To start frontend wrappid-app in web or mobile, change directory to wrappid-app project
 
 ```terminal
-wrappid init service <wrappid>
-```
-
-**Output:**  
-![wrappid-service](https://github.com/wrappid/.github/assets/61864488/b5c91ac7-f30f-48e7-b3f3-f0e736f27e95)
-
-
-#### 4.2.2. Set up a backend wrappid-service
-Run the below command to setup the development Backend Project :
-
-```bash
-cd <wrappid>-service
-wrappid setup
-```
-
-> **_Note:_** _Backend wrappid-service doesn't have any runtime environments_
-
-
-### 4.3. Module - `<wrappid>-module`
-
-Now we will learn to:
-1. Initialize a wrappid-module
-2. Include or exclude a wrappid-module from `wrappid-[app|service]`
-
-#### 4.3.1. Initialize a wrappid-module
-Run the below command to create Module Wrappid Project
-
-```terminal
-wrappid init module <wrappid>
-```
-
-**Output:**  
-![wrappid-module](https://github.com/wrappid/.github/assets/61864488/fc0f4866-43d5-4e3a-92a6-7b3e0aa768ab)
-
-
-Now you have a `<wrappid>-<module>` Module Wrappid Project at the directory the command was executed from.
-
-#### 4.3.2. Include or exclude a wrappid-module from `wrappid-[app|service]`
-
-> **_Note:_** _You cannot setup or start a wrappid-module project like wrappid-app and wrappid-service._   
-
-To use Wrappid module projects
-
-- You need to `include` the module into your `wrappid-[app|service]`, from inside of the root of `wrappid-[app|service]`.
-- Your module must be located in the parent directory of  `wrappid-[app|service]` project.
-- Your `wrappid-[app|service]` should be setup.
-
-Run the below command from the root of the `wrappid-[app|service]` project you wish to include your module.
-```terminal
-cd wrappid-[app|service]
-wrappid include <module-name>
-```
-
-Make sure to not write `-module` following your <module-name>
-
-Similarly, to exclude a module from your `wrappid-[app|service]`, run the below command.
-```terminal
-wrappid exclude <module>-name
-```
-
-Make sure to not write `-module` following your <module-name>
-
-Wrappid modules are hot swappable, you can `include` and `exclude` a module while `wrappid-[app|service]` is running
-
-### 5. Run `Wrappid` project.
-Now time to see some action:
-1. [Start a Wrappid Frontend project]()
-2. [Start a Backend project]()
-3. [Wrappid Environments]()
-
-### 5.1. Start a Wrappid Frontend project
-You can start a frontend app in two modes:
-- Static (Without Backend Service)
-- Dynamic (With Backend Service)
-
-- Static (Without Backend Service)
-Run the below command to start the development frontend server for web:
-```bash
-cd wrappid-app
-wrappid start web
-```
-By default wrappid-app web runtime env runs at `localhost:3000`
-
-Run the below command to start the development server for mobile:
-
-```bash
-cd wrappid-app
-wrappid start mobile
-```
-
-- Dynamic (With Backend Service)
-
-To start Dynamic Fontend Wrappid project, you'll first need your Wrappid Backend up and running. [steps for backend](https://github.com/wrappid/#2-starting-backend-project).   
- - Enter you Backend URL in `wrappid.conf.json` file located at the root of `wrappid-app` project.
- - Follow the same steps for starting a [static frontend wrappid-app]()
-
-### 5.2. Start a Backend project
-
-To Start a Backend Wrappid Service project, follow below steps:
-
-- Change directory to  `wrappid-service` project.
-- Setup `wrappid-service` project. (Skip this step if you already setup)
-- `Include` your `wrappid-modules` if any.
-- Enter you database credential in `wrappid.conf.json` file located at the root of `wrappid-service` project.
-- Finally run the below command to start your development Wrappid Backend Project
-  ```terminal
-  wrappid start
-  ```
-- By default, your backend will run at port : ``
-
-### 5.3 Wrappid Environments
-Wrappid projects can be runned in 3 environments:
-- Dev: Suitable for Development
-- Stage: Suitable for Testing
-- Prod: Suitable for Testing
-
-By default, Wrappid project setups and starts in `dev` environment.
-These environments are to be configured in wrappid.conf.json located at the root of `wrappid-[app|service]` project
-
-To run a Wrappid-[app|service] project in a different environment, run the below command:
-```terminal
-cd wrappid-app
+cd <project_name>-app
 wrappid start [web|mobile] --env=[dev|stage|prod]
-
 ```
+
+To start backend wrappid-app, change directory to wrappid-service project
+
 ```terminal
-cd wrappid-service
+cd <project_name>-service
 wrappid start --env=[dev|stage|prod]
 ```
 
-### Tips:
-- The `cd` command changes the directory you're working with. In order to work with your newly created Wrappid-App, you'll need to navigate the terminal there.
+**Output**
 
-- Do not edit runtime files
-
-# Learn Wrappid In Details   
-[Click here.]()
 <!--
 ## Hi there 👋
 
