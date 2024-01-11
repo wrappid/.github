@@ -16,24 +16,6 @@
 
 # Wrapper Framework for Rapid development
 
-**Table of Content**
-- [Wrapper Framework for Rapid development](#wrapper-framework-for-rapid-development)
-  - [`Wrappid` Framework is a wrapper framework built to enable rapid development of applications.](#wrappid-framework-is-a-wrapper-framework-built-to-enable-rapid-development-of-applications)
-  - [Getting Started](#getting-started)
-    - [1. Check Pre-requisites](#1-check-pre-requisites)
-    - [2. Install `Wrappid Toolkit`](#2-install-wrappid-toolkit)
-    - [3. One-time Initialisation](#3-one-time-initialisation)
-      - [3.1. Install package dependencies](#31-install-package-dependencies)
-      - [3.2. Download \& Install GitHub CLI or `gh` (if not already installed)](#32-download--install-github-cli-or-gh-if-not-already-installed)
-      - [3.3. Authenticate with GitHub A/c to use GitHub CLI or `gh`](#33-authenticate-with-github-ac-to-use-github-cli-or-gh)
-  - [4. Quick Start With Wrappid Project(s)](#4-quick-start-with-wrappid-projects)
-    - [4.1 How to Create Wrappid Projects?](#41-how-to-create-wrappid-projects)
-      - [Output](#output)
-    - [4.2 How to Setup Wrappid Project?](#42-how-to-setup-wrappid-project)
-    - [4.3 How to Start a Wrappid Project?](#43-how-to-start-a-wrappid-project)
-    - [All commands for ref:](#all-commands-for-ref)
-
-
 ## `Wrappid` Framework is a wrapper framework built to enable rapid development of applications.
 
 `Wrappid` Framework is a wrapper framework built to enable rapid development of applications based on `React`, `React Native`, `Node`, `Express`, etc. Here, you **write code once** and use `Wrappid Toolkit` to build your web and mobile applications simultaneously.
@@ -46,15 +28,23 @@
 
 This getting started section will help you setup a basic `Wrappid` project environment. The easiest way is to use the `Wrappid Toolkit`.
 
-Follow the below steps to get going.
+Follow the below steps to get going:
 
-[1. Check Pre-requisites](#1-check-pre-requisites)   
-[2. Install `Wrappid Toolkit`](#2-install-wrappid-toolkit)   
-[3. One-time Initialisation](#3-one-time-initialisation)   
-[4. Quick Start With Wrappid Project(s)](#4-quick-start-with-wrappid-projects)   
+[1. Get Early Access to Wrappid](#1-get-early-access-to-wrappid)   
+[2. Check Pre-requisites](#2-check-pre-requisites)   
+[3. Install `Wrappid Toolkit`](#3-install-wrappid-toolkit)   
+[4. One-time Initialisation](#4-one-time-initialisation)   
+[5. Quick Start With Wrappid Project(s)](#5-quick-start-with-wrappid-projects)   
 
+### 1. Get Early Access to Wrappid
 
-### 1. Check Pre-requisites
+Please fill [Wrappid Early Access Request form](https://forms.gle/NCUbSXvsX1v9QhD96) to get a valid `<WRAPPID_TOKEN>`. After filling the form you will receive the `<WRAPPID_TOKEN>` and Wrappiders Group link in your email. Make Sure to Join Wrappiders Group to receive important updates regarding Wrappid Framework.
+
+The above mentioned_ `<WRAPPID_TOKEN>` _could only be used to read and download the `Wrappid` packages.   
+
+We will use this token in later steps.
+
+### 2. Check Pre-requisites
 
 <!-- First you need to verify that your system fulfills the pre-requisites. Listed below are the things required to be available in your system. -->
 Please verify the pre-requisites listed below:
@@ -90,25 +80,19 @@ Recommended Code editor:
 
 
 
-### 2. Install `Wrappid Toolkit`
+### 3. Install `Wrappid Toolkit`
 
 To use `Wrappid Toolkit`, you need to setup scoped wrappid package registry and install `@wrappid/toolkit` globally in your system.
 
-> <br/>
->
 > **_Note:_**
+> <!-- > _The `@wrappid/toolkit` is available in the GitHub npm package registry. You will have to setup scoped package registry as your npm runtime configuration._ -->
 >
-<!-- > _The `@wrappid/toolkit` is available in the GitHub npm package registry. You will have to setup scoped package registry as your npm runtime configuration._ -->
->
-> _Please fill [Wrappid Early Access Request form](https://forms.gle/NCUbSXvsX1v9QhD96) to get a valid_ `<WRAPPID_TOKEN>`. After filling the form you will receive the `<WRAPPID_TOKEN>` in your email.
->
-> _The above mentioned_ `<WRAPPID_TOKEN>` _could only be used to read and download the `Wrappid` packages._
->
-> <br/>
+> _It is expected that you successfully went through [1. Get Early Access to Wrappid](#1-get-early-access-to-wrappid) section. If you don't, you won't be able to setup wrappid framework._
 
  _Run the below commands to setup scoped package registry:_
 
- <!--C:\Users\Sam>-->
+ <!--C:\Users\Wrappid>-->
+Here we will use `<WRAPPID_TOKEN>` that is sent to your email.
 
  ```terminal
  npm config set @wrappid:registry https://npm.pkg.github.com/wrappid
@@ -132,10 +116,12 @@ This should show you the exact version of `Wrappid Toolkit` installed
 
 ```terminal
 wrappid -V
-v0.0.100
+v0.0.107
 ```
 
-### 3. One-time Initialisation
+> **_Note:_** _This is the  `Wrappid Toolkit` version at the time of this documentation._
+
+### 4. One-time Initialisation
 
 Run the below command to install all dependencies `Wrappid Toolkit` uses
 
@@ -149,11 +135,11 @@ This one-time initialisation of `Wrappid Toolkit` follows the below steps:
 - Download & Install GitHub CLI or `gh` (if not already installed)
 - Authenticate with GitHub A/c to use GitHub CLI or `gh`
 
-#### 3.1. Install package dependencies
+#### 4.1. Install package dependencies
 
 This is a automated process. You need not do anything.
 
-#### 3.2. Download & Install GitHub CLI or `gh` (if not already installed)
+#### 4.2. Download & Install GitHub CLI or `gh` (if not already installed)
 
 This is a automated process but you will be prompted with GitHub CLI or `gh` installation. 
 
@@ -186,7 +172,7 @@ Enter `sudo` password when prompted, and continue.
 >
 > <br/>
 
-#### 3.3. Authenticate with GitHub A/c to use GitHub CLI or `gh`
+#### 4.3. Authenticate with GitHub A/c to use GitHub CLI or `gh`
 
 When prompted, follow on-screen instructions to authenticate yourself with your GitHub A/c. It starts like:
 
@@ -315,9 +301,9 @@ wrappid start
 This should launch your default browser with a URL `http://localhost:3000`
 ```
 -->
-## 4. Quick Start With Wrappid Project(s)
+## 5. Quick Start With Wrappid Project(s)
 
-### 4.1 How to Create Wrappid Projects?
+### 5.1 How to Create Wrappid Projects?
 `Wrappid` Framework supports building frontend, backend (API middleware & DB handling) and business specific modules. Wrappid-Toolkit enables us to generates boilerplate applications.
 
 1. [Frontend](https://github.com/wrappid/wrappid-app) - `<wrappid>-app`   
@@ -345,7 +331,7 @@ This will create 3 `Wrappid` project repositories with project names(user input)
 ![init](https://github.com/wrappid/.github/assets/61864488/29bca9c0-74c8-4ea3-9264-877d206ac0f5)
 
 
-### 4.2 How to Setup Wrappid Project?
+### 5.2 How to Setup Wrappid Project?
 To setup frontend wrappid-app in web or mobile, change directory to wrappid-app project
 
 ```terminal
@@ -360,7 +346,7 @@ cd <project_name>-service
 wrappid setup
 ```
 
-### 4.3 How to Start a Wrappid Project?
+### 5.3 How to Start a Wrappid Project?
 
 To start frontend wrappid-app in web or mobile, change directory to wrappid-app project
 
@@ -428,7 +414,7 @@ Start auto installation process.
 Now you have a sample module for business module refference.
 
 -->
-
+<!-- 
 ### All commands for ref:
 wrappid cli
 Alias: `wcli`, `wr`.
@@ -489,7 +475,7 @@ wrappid build web
 wrappid build android
 
 
-```
+``` -->
 <!--
 wrappid-dev cli
 Alias: `wdev`, `wd`.
