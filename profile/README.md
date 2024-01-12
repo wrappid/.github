@@ -62,11 +62,16 @@ To see if you already have Node.js and npm installed and check the installed ver
 
 ```terminal
 node -v
-v16.20.0
-
-npm -v
-8.19.4
 ```
+Expected output:   
+v16.20.x
+
+```terminal
+npm -v
+```
+Expected output:   
+8.x.x
+
 
 > **_Note:_** _Above mentioned version is based on the time of documentation, 16.20.(x), 8.(x).(x), x may differ._
 
@@ -96,7 +101,8 @@ Here we will use `<WRAPPID_TOKEN>` that is sent to your email.
 
  ```terminal
  npm config set @wrappid:registry https://npm.pkg.github.com/wrappid
-
+```
+```terminal
  npm config set //npm.pkg.github.com/:_authToken <WRAPPID_TOKEN>
  ```
 
@@ -116,8 +122,9 @@ This should show you the exact version of `Wrappid Toolkit` installed
 
 ```terminal
 wrappid -V
-v0.0.107
 ```
+Expected output:   
+v0.0.107
 
 > **_Note:_** _This is the  `Wrappid Toolkit` version at the time of this documentation._
 
@@ -197,9 +204,10 @@ This should show you the exact version of `gh` installed. -->
 
 <!-- ```terminal
 gh --version
+```
 gh version 2.28.0 (2023-04-25)
 https://github.com/cli/cli/releases/tag/v2.28.0
-``` -->
+ -->
 
 <!--
 ### 4. `Wrappid` Project Setup
