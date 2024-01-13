@@ -1,20 +1,6 @@
-<img src="https://github.com/wrappid/.github/blob/main/logo/logo-1200x400.png" />
-
-<!--
-```text
-                                    _     _
-    __      ___ __ __ _ _ __  _ __ (_) __| |
-    \ \ /\ / / '__/ _` | '_ \| '_ \| |/ _` |
-     \ V  V /| | | (_| | |_) | |_) | | (_| |
-      \_/\_/ |_|  \__,_| .__/| .__/|_|\__,_|
-                       |_|   |_|
-
-```
-
-# `Wrappid`
--->
-
 # Wrapper Framework for Rapid development
+
+<img src="https://github.com/wrappid/.github/blob/main/logo/logo-1200x400.png" width="50%" height="auto" />
 
 ## `Wrappid` Framework is a wrapper framework built to enable rapid development of applications.
 
