@@ -155,6 +155,8 @@ Enter `sudo` password when prompted, and continue.
 >
 > _Close all terminals/cmd and open a fresh terminal/cmd and run `gh` or `gh --version` to confirm GitHub CLI installation._
 >
+> _Make sure that your `gh cli` version is or above 2.40.0_
+>
 > _If `gh` still doesn't work, go to the [official documentation of GitHub CLI](https://github.com/cli/cli#installation) and install `gh` manually._
 >
 > _After successfull installation of GitHub CLI or `gh`, run `wrappid install` again._
