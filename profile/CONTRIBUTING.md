@@ -19,9 +19,9 @@ We ❤️ Javascript! We need to set up node 16.20.x & npm 8.x.x, follow the doc
 
     Create branch from development branch.   
     Branch naming convention:  
-     ```
+    ```
      WRPD-(feature|bugfix|release|ci|enhancement|hotfix|refactor|deps|docs|experimental|security)-(issue-number)
-      ```
+    ```
 
     e.g., `WRPD-feature-1`
 
