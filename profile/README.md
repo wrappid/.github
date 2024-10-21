@@ -324,7 +324,8 @@ This will create 3 `Wrappid` project repositories with project names(user input)
 
 #### Output
 
-![init](https://github.com/wrappid/.github/assets/61864488/29bca9c0-74c8-4ea3-9264-877d206ac0f5)
+![gi](https://github.com/user-attachments/assets/7e832abc-7c14-4942-be9e-c9640ab1b262)
+
 
 
 ### 5.2 How to Setup Wrappid Project?
